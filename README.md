@@ -21,7 +21,7 @@ The Goods Arise project is a website dedicated to showcasing goods and logistics
 
 ### Links
 
-- [Goods Arise ](https://project-6-for-frontend.vercel.app/) 
+- [Goods Arise ](https://project-5-for-frontend.vercel.app/) 
 
 ## Features
 
