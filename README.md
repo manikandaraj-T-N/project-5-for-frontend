@@ -10,7 +10,6 @@
 - [Features](#features)
 - [Built With](#built-with)
 - [Usage](#usage)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
