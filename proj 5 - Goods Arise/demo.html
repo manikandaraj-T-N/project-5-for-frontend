@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /* Small screen styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff; /* Adjust as needed */
+        border: 1px solid #ccc; /* Adjust as needed */
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    .navbar-menu.open li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .toggle-icon {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+
+    /* Rotate the toggle icon to an X */
+    .navbar-toggle.open .toggle-icon:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .navbar-toggle.open .toggle-icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.open .toggle-icon:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="toggle-icon"></span>
+            </button>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li>
+                    <select name="home" id="" class="home">
+                        <option value="" disabled selected><a href="#" class="nav-item">Home</a></option>
+                        <option value="Home 1"><a href="#">Home 1</a></option>
+                        <option value="Home 2"> <a href="#">Home 2</a></option>
+                        <option value="Home 3"> <a href="#">Home 3</a></option>
+                    </select>
+                </li>
+    
+                <li>
+                    <select name="aboutus" id="" class="aboutus">
+                        <option value="" disabled selected><a href="#" class="nav-item">About us</a></option>
+                        <option value="About 1"><a href="#">About 1</a></option>
+                        <option value="About 2"> <a href="#">About 2</a></option>
+                        <option value="About 3"> <a href="#">About 3</a></option>
+                    </select>
+                </li>
+    
+                <li>
+                    <select name="products" id="" class="products">
+                        <option value="" disabled selected><a href="#" class="nav-item">Products</a></option>
+                        <option value="products 1"><a href="#">Products 1</a></option>
+                        <option value="products 2"> <a href="#">Products 2</a></option>
+                        <option value="products 3"> <a href="#">Products 3</a></option>
+                    </select>
+                </li>
+    
+                <li>
+                    <select name="blog" id="" class="blog1">
+                        <option value="" disabled selected><a href="#" class="nav-item">Blog</a></option>
+                        <option value="products 1"><a href="#">Blog 1</a></option>
+                        <option value="products 2"> <a href="#">Blog 2</a> </option>
+                        <option value="products 3"> <a href="#">Blog 3</a> </option>
+                    </select>
+                </li>
+    
+                <li>
+                    <a href="#" class="nav-item">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+ document.addEventListener("DOMContentLoaded", function() {
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+
+    navbarToggle.addEventListener('click', function() {
+        navbarMenu.classList.toggle('open');
+        navbarToggle.classList.toggle('open');
+    });
+});
+
+
+    </script>
+</body>
+</html>
